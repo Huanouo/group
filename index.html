@@ -48,22 +48,79 @@
             <!-- 新手指南 -->
             <div x-show="activeSection === 'basic'" x-cloak>
                 <h2 class="text-2xl font-bold mb-4">絕區零新手指南</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <div class="bg-white p-4 rounded-lg shadow">
-                        <h3 class="text-lg font-semibold mb-2">遊戲基礎介紹</h3>
-                        <p class="text-gray-600">基本操作、系統功能與遊戲機制說明</p>
-                        <a href="#" class="mt-2 inline-block text-blue-600 hover:text-blue-800">閱讀更多</a>
+                <!-- 重要系統介紹 -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold mb-4 text-indigo-600">重要系統速覽</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-indigo-500">
+                            <h4 class="font-semibold text-lg mb-2">重要商店</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>🎵 唱片行：前期抽套裝補充</li>
+                                <li>☕ 咖啡店：每日補充體力</li>
+                                <li>🔧 改裝店：邦布升級</li>
+                                <li>🎮 玩具店：兌換特定武器</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-purple-500">
+                            <h4 class="font-semibold text-lg mb-2">角色培養重點</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>💪 主輸出：屬性傷害>雙爆>攻擊</li>
+                                <li>🎯 異常輸出：精通>效率>屬性傷</li>
+                                <li>🔄 技能優先：主要輸出技能</li>
+                                <li>🎵 音擎選擇：對應專武優先</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-500">
+                            <h4 class="font-semibold text-lg mb-2">開荒推薦角色</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li>⭐ 四星：蒼角、露西、派派</li>
+                                <li>🔥 隊伍配置：2+2配隊組合</li>
+                                <li>📋 基礎配置：擊破+支援+強攻</li>
+                                <li>💡 注意：同陣營屬性優先</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="bg-white p-4 rounded-lg shadow">
-                        <h3 class="text-lg font-semibold mb-2">戰鬥系統教學</h3>
-                        <p class="text-gray-600">戰鬥操作、連擊技巧與特殊機制解說</p>
-                        <a href="#" class="mt-2 inline-block text-blue-600 hover:text-blue-800">閱讀更多</a>
+                </div>
+
+                <!-- 進階攻略提示 -->
+                <div class="bg-gradient-to-r from-purple-100 to-indigo-100 p-6 rounded-lg shadow-lg mb-8">
+                    <h3 class="text-xl font-bold mb-4 text-purple-800">進階遊戲要點</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-semibold mb-2 text-purple-700">培養建議</h4>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li>前期專注培養一隊，主C優先</li>
+                                <li>驅動盤以主屬性匹配為主</li>
+                                <li>技能升級需參考角色定位</li>
+                                <li>合理利用每日補給資源</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-2 text-purple-700">注意事項</h4>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li>新手期合理規劃抽卡資源</li>
+                                <li>優先完成主線任務解鎖功能</li>
+                                <li>合理利用商店兌換資源</li>
+                                <li>留意活動時程把握獎勵</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="bg-white p-4 rounded-lg shadow">
-                        <h3 class="text-lg font-semibold mb-2">新手必知要點</h3>
-                        <p class="text-gray-600">起手選角建議、前期發展規劃與資源分配</p>
-                        <a href="#" class="mt-2 inline-block text-blue-600 hover:text-blue-800">閱讀更多</a>
-                    </div>
+                </div>
+
+                <!-- 快速連結區 -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <a href="#" class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+                        <h3 class="text-lg font-semibold mb-2 text-blue-600">詳細攻略</h3>
+                        <p class="text-gray-600">深入探討角色培養與技能搭配</p>
+                    </a>
+                    <a href="#" class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+                        <h3 class="text-lg font-semibold mb-2 text-green-600">素材規劃</h3>
+                        <p class="text-gray-600">材料獲取與培養規劃指南</p>
+                    </a>
+                    <a href="#" class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+                        <h3 class="text-lg font-semibold mb-2 text-purple-600">最新活動</h3>
+                        <p class="text-gray-600">當前版本活動資訊與獎勵</p>
+                    </a>
                 </div>
             </div>
 
@@ -71,6 +128,38 @@
             <div x-show="activeSection === 'characters'" x-cloak>
                 <h2 class="text-2xl font-bold mb-4">角色培養指南</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <!-- 艾蓮角色卡片 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-blue-500">
+                        <h3 class="text-xl font-bold mb-3">艾蓮 - 冰屬性戰鬥專家</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-semibold text-blue-600">角色特點</h4>
+                                <p class="text-gray-600">靈活的遊走型輸出角色，擅長快速衝刺移動並進行持續輸出。</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-blue-600">核心技能</h4>
+                                <ul class="list-disc list-inside text-gray-600">
+                                    <li>巡游狀態：提升戰鬥機動性</li>
+                                    <li>急冻充能：強化特定攻擊</li>
+                                    <li>主要輸出：普攻、特殊技和連攜技</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-blue-600">推薦搭配</h4>
+                                <ul class="list-disc list-inside text-gray-600">
+                                    <li>莱卡恩：協助造成冰凍效果</li>
+                                    <li>苍角：提供增傷效果</li>
+                                    <li>丽娜：提升穿透率及元素反應</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-blue-600">配裝推薦</h4>
+                                <p class="text-gray-600">極地重金屬四件套：提升冰傷、普攻和衝刺攻擊傷害</p>
+                            </div>
+                        </div>
+                        <a href="#" class="mt-4 inline-block text-blue-600 hover:text-blue-800">詳細培養攻略 →</a>
+                    </div>
+                    <!-- 原有的卡片 -->
                     <div class="bg-white p-4 rounded-lg shadow">
                         <h3 class="text-lg font-semibold mb-2">角色評測</h3>
                         <p class="text-gray-600">各角色強度分析與使用建議</p>
