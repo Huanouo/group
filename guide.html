@@ -366,6 +366,531 @@
                 </div>
             </div>
 
+            <!-- 新手指南 -->
+            <div x-show="activeSection === 'basic'" x-cloak class="space-y-8">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold mb-4 bg-gradient-to-r from-indigo-600 to-blue-500 bg-clip-text text-transparent">絕區零新手指南</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">探索遊戲的奧秘，成為最強的指揮官</p>
+                </div>
+
+                <!-- 重要系統介紹 -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-bold mb-6 text-center text-indigo-800">重要系統速覽</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-gradient-to-br from-white to-blue-50 p-6 rounded-xl shadow-lg border-l-4 border-blue-600 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                            <div class="flex items-center mb-4">
+                                <span class="text-2xl mr-3">🎵</span>
+                                <h4 class="font-semibold text-lg text-blue-800">重要商店</h4>
+                            </div>
+                            <ul class="space-y-3 text-slate-700">
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-blue-100 rounded-full mr-2 text-blue-600">🎵</span>
+                                    唱片行：前期抽套裝補充
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-blue-100 rounded-full mr-2 text-blue-600">☕</span>
+                                    咖啡店：每日補充體力
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-blue-100 rounded-full mr-2 text-blue-600">🔧</span>
+                                    改裝店：邦布升級
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-blue-100 rounded-full mr-2 text-blue-600">🎮</span>
+                                    玩具店：兌換特定武器
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-white to-indigo-50 p-6 rounded-xl shadow-lg border-l-4 border-indigo-600 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                            <div class="flex items-center mb-4">
+                                <span class="text-2xl mr-3">💪</span>
+                                <h4 class="font-semibold text-lg text-indigo-800">角色培養重點</h4>
+                            </div>
+                            <ul class="space-y-3 text-slate-700">
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-indigo-100 rounded-full mr-2 text-indigo-600">💪</span>
+                                    主輸出：屬性傷害>雙爆>攻擊
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-indigo-100 rounded-full mr-2 text-indigo-600">🎯</span>
+                                    異常輸出：精通>效率>屬性傷
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-indigo-100 rounded-full mr-2 text-indigo-600">🔄</span>
+                                    技能優先：主要輸出技能
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-indigo-100 rounded-full mr-2 text-indigo-600">🎵</span>
+                                    音擎選擇：對應專武優先
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-white to-cyan-50 p-6 rounded-xl shadow-lg border-l-4 border-cyan-600 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                            <div class="flex items-center mb-4">
+                                <span class="text-2xl mr-3">⭐</span>
+                                <h4 class="font-semibold text-lg text-cyan-800">開荒推薦角色</h4>
+                            </div>
+                            <ul class="space-y-3 text-slate-700">
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-cyan-100 rounded-full mr-2 text-cyan-600">⭐</span>
+                                    四星：蒼角、露西、派派
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-cyan-100 rounded-full mr-2 text-cyan-600">🔥</span>
+                                    隊伍配置：2+2配隊組合
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-cyan-100 rounded-full mr-2 text-cyan-600">📋</span>
+                                    基礎配置：擊破+支援+強攻
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-cyan-100 rounded-full mr-2 text-cyan-600">💡</span>
+                                    注意：同陣營屬性優先
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 進階攻略提示 -->
+                <div class="bg-gradient-to-r from-indigo-50 via-blue-50 to-cyan-50 p-8 rounded-2xl shadow-xl mb-12">
+                    <h3 class="text-2xl font-bold mb-6 text-center text-indigo-800">進階遊戲要點</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-md">
+                            <h4 class="font-semibold text-lg mb-4 text-indigo-700 flex items-center">
+                                <span class="text-2xl mr-2">📈</span>
+                                培養建議
+                            </h4>
+                            <ul class="space-y-3 text-gray-700">
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>
+                                    前期專注培養一隊，主C優先
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>
+                                    驅動盤以主屬性匹配為主
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>
+                                    技能升級需參考角色定位
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>
+                                    合理利用每日補給資源
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-md">
+                            <h4 class="font-semibold text-lg mb-4 text-indigo-700 flex items-center">
+                                <span class="text-2xl mr-2">⚠️</span>
+                                注意事項
+                            </h4>
+                            <ul class="space-y-3 text-gray-700">
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>
+                                    新手期合理規劃抽卡資源
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>
+                                    優先完成主線任務解鎖功能
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>
+                                    合理利用商店兌換資源
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>
+                                    留意活動時程把握獎勵
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 快速連結區 -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="group">
+                        <a href="#" class="block bg-gradient-to-br from-cyan-50 to-blue-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-blue-200">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="text-lg font-semibold text-cyan-700">詳細攻略</h3>
+                                <span class="text-2xl group-hover:translate-x-1 transition-transform">→</span>
+                            </div>
+                            <p class="text-slate-600">深入探討角色培養與技能搭配</p>
+                        </a>
+                    </div>
+                    <div class="group">
+                        <a href="#" class="block bg-gradient-to-br from-blue-50 to-indigo-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-indigo-200">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="text-lg font-semibold text-blue-700">素材規劃</h3>
+                                <span class="text-2xl group-hover:translate-x-1 transition-transform">→</span>
+                            </div>
+                            <p class="text-slate-600">材料獲取與培養規劃指南</p>
+                        </a>
+                    </div>
+                    <div class="group">
+                        <a href="#" class="block bg-gradient-to-br from-indigo-50 to-purple-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-purple-200">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="text-lg font-semibold text-indigo-700">最新活動</h3>
+                                <span class="text-2xl group-hover:translate-x-1 transition-transform">→</span>
+                            </div>
+                            <p class="text-slate-600">當前版本活動資訊與獎勵</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 新手指南 -->
+            <div x-show="activeSection === 'basic'" x-cloak class="space-y-8">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold mb-4 bg-gradient-to-r from-indigo-600 to-blue-500 bg-clip-text text-transparent">絕區零新手指南</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">探索遊戲的奧秘，成為最強的指揮官</p>
+                </div>
+
+                <!-- 重要系統介紹 -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-bold mb-6 text-center text-indigo-800">重要系統速覽</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-gradient-to-br from-white to-blue-50 p-6 rounded-xl shadow-lg border-l-4 border-blue-600 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                            <div class="flex items-center mb-4">
+                                <span class="text-2xl mr-3">🎵</span>
+                                <h4 class="font-semibold text-lg text-blue-800">重要商店</h4>
+                            </div>
+                            <ul class="space-y-3 text-slate-700">
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-blue-100 rounded-full mr-2 text-blue-600">🎵</span>
+                                    唱片行：前期抽套裝補充
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-blue-100 rounded-full mr-2 text-blue-600">☕</span>
+                                    咖啡店：每日補充體力
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-blue-100 rounded-full mr-2 text-blue-600">🔧</span>
+                                    改裝店：邦布升級
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-blue-100 rounded-full mr-2 text-blue-600">🎮</span>
+                                    玩具店：兌換特定武器
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-white to-indigo-50 p-6 rounded-xl shadow-lg border-l-4 border-indigo-600 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                            <div class="flex items-center mb-4">
+                                <span class="text-2xl mr-3">💪</span>
+                                <h4 class="font-semibold text-lg text-indigo-800">角色培養重點</h4>
+                            </div>
+                            <ul class="space-y-3 text-slate-700">
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-indigo-100 rounded-full mr-2 text-indigo-600">💪</span>
+                                    主輸出：屬性傷害>雙爆>攻擊
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-indigo-100 rounded-full mr-2 text-indigo-600">🎯</span>
+                                    異常輸出：精通>效率>屬性傷
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-indigo-100 rounded-full mr-2 text-indigo-600">🔄</span>
+                                    技能優先：主要輸出技能
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-indigo-100 rounded-full mr-2 text-indigo-600">🎵</span>
+                                    音擎選擇：對應專武優先
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-white to-cyan-50 p-6 rounded-xl shadow-lg border-l-4 border-cyan-600 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                            <div class="flex items-center mb-4">
+                                <span class="text-2xl mr-3">⭐</span>
+                                <h4 class="font-semibold text-lg text-cyan-800">開荒推薦角色</h4>
+                            </div>
+                            <ul class="space-y-3 text-slate-700">
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-cyan-100 rounded-full mr-2 text-cyan-600">⭐</span>
+                                    四星：蒼角、露西、派派
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-cyan-100 rounded-full mr-2 text-cyan-600">🔥</span>
+                                    隊伍配置：2+2配隊組合
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-cyan-100 rounded-full mr-2 text-cyan-600">📋</span>
+                                    基礎配置：擊破+支援+強攻
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-cyan-100 rounded-full mr-2 text-cyan-600">💡</span>
+                                    注意：同陣營屬性優先
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 進階攻略提示 -->
+                <div class="bg-gradient-to-r from-indigo-50 via-blue-50 to-cyan-50 p-8 rounded-2xl shadow-xl mb-12">
+                    <h3 class="text-2xl font-bold mb-6 text-center text-indigo-800">進階遊戲要點</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-md">
+                            <h4 class="font-semibold text-lg mb-4 text-indigo-700 flex items-center">
+                                <span class="text-2xl mr-2">📈</span>
+                                培養建議
+                            </h4>
+                            <ul class="space-y-3 text-gray-700">
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>
+                                    前期專注培養一隊，主C優先
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>
+                                    驅動盤以主屬性匹配為主
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>
+                                    技能升級需參考角色定位
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>
+                                    合理利用每日補給資源
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-md">
+                            <h4 class="font-semibold text-lg mb-4 text-indigo-700 flex items-center">
+                                <span class="text-2xl mr-2">⚠️</span>
+                                注意事項
+                            </h4>
+                            <ul class="space-y-3 text-gray-700">
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>
+                                    新手期合理規劃抽卡資源
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>
+                                    優先完成主線任務解鎖功能
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>
+                                    合理利用商店兌換資源
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>
+                                    留意活動時程把握獎勵
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 快速連結區 -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="group">
+                        <a href="#" class="block bg-gradient-to-br from-cyan-50 to-blue-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-blue-200">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="text-lg font-semibold text-cyan-700">詳細攻略</h3>
+                                <span class="text-2xl group-hover:translate-x-1 transition-transform">→</span>
+                            </div>
+                            <p class="text-slate-600">深入探討角色培養與技能搭配</p>
+                        </a>
+                    </div>
+                    <div class="group">
+                        <a href="#" class="block bg-gradient-to-br from-blue-50 to-indigo-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-indigo-200">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="text-lg font-semibold text-blue-700">素材規劃</h3>
+                                <span class="text-2xl group-hover:translate-x-1 transition-transform">→</span>
+                            </div>
+                            <p class="text-slate-600">材料獲取與培養規劃指南</p>
+                        </a>
+                    </div>
+                    <div class="group">
+                        <a href="#" class="block bg-gradient-to-br from-indigo-50 to-purple-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-purple-200">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="text-lg font-semibold text-indigo-700">最新活動</h3>
+                                <span class="text-2xl group-hover:translate-x-1 transition-transform">→</span>
+                            </div>
+                            <p class="text-slate-600">當前版本活動資訊與獎勵</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 新手指南 -->
+            <div x-show="activeSection === 'basic'" x-cloak class="space-y-8">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold mb-4 bg-gradient-to-r from-indigo-600 to-blue-500 bg-clip-text text-transparent">絕區零新手指南</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">探索遊戲的奧秘，成為最強的指揮官</p>
+                </div>
+
+                <!-- 重要系統介紹 -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-bold mb-6 text-center text-indigo-800">重要系統速覽</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-gradient-to-br from-white to-blue-50 p-6 rounded-xl shadow-lg border-l-4 border-blue-600 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                            <div class="flex items-center mb-4">
+                                <span class="text-2xl mr-3">🎵</span>
+                                <h4 class="font-semibold text-lg text-blue-800">重要商店</h4>
+                            </div>
+                            <ul class="space-y-3 text-slate-700">
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-blue-100 rounded-full mr-2 text-blue-600">🎵</span>
+                                    唱片行：前期抽套裝補充
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-blue-100 rounded-full mr-2 text-blue-600">☕</span>
+                                    咖啡店：每日補充體力
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-blue-100 rounded-full mr-2 text-blue-600">🔧</span>
+                                    改裝店：邦布升級
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-blue-100 rounded-full mr-2 text-blue-600">🎮</span>
+                                    玩具店：兌換特定武器
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-white to-indigo-50 p-6 rounded-xl shadow-lg border-l-4 border-indigo-600 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                            <div class="flex items-center mb-4">
+                                <span class="text-2xl mr-3">💪</span>
+                                <h4 class="font-semibold text-lg text-indigo-800">角色培養重點</h4>
+                            </div>
+                            <ul class="space-y-3 text-slate-700">
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-indigo-100 rounded-full mr-2 text-indigo-600">💪</span>
+                                    主輸出：屬性傷害>雙爆>攻擊
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-indigo-100 rounded-full mr-2 text-indigo-600">🎯</span>
+                                    異常輸出：精通>效率>屬性傷
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-indigo-100 rounded-full mr-2 text-indigo-600">🔄</span>
+                                    技能優先：主要輸出技能
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-indigo-100 rounded-full mr-2 text-indigo-600">🎵</span>
+                                    音擎選擇：對應專武優先
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-white to-cyan-50 p-6 rounded-xl shadow-lg border-l-4 border-cyan-600 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                            <div class="flex items-center mb-4">
+                                <span class="text-2xl mr-3">⭐</span>
+                                <h4 class="font-semibold text-lg text-cyan-800">開荒推薦角色</h4>
+                            </div>
+                            <ul class="space-y-3 text-slate-700">
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-cyan-100 rounded-full mr-2 text-cyan-600">⭐</span>
+                                    四星：蒼角、露西、派派
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-cyan-100 rounded-full mr-2 text-cyan-600">🔥</span>
+                                    隊伍配置：2+2配隊組合
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-cyan-100 rounded-full mr-2 text-cyan-600">📋</span>
+                                    基礎配置：擊破+支援+強攻
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-6 h-6 flex items-center justify-center bg-cyan-100 rounded-full mr-2 text-cyan-600">💡</span>
+                                    注意：同陣營屬性優先
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 進階攻略提示 -->
+                <div class="bg-gradient-to-r from-indigo-50 via-blue-50 to-cyan-50 p-8 rounded-2xl shadow-xl mb-12">
+                    <h3 class="text-2xl font-bold mb-6 text-center text-indigo-800">進階遊戲要點</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-md">
+                            <h4 class="font-semibold text-lg mb-4 text-indigo-700 flex items-center">
+                                <span class="text-2xl mr-2">📈</span>
+                                培養建議
+                            </h4>
+                            <ul class="space-y-3 text-gray-700">
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>
+                                    前期專注培養一隊，主C優先
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>
+                                    驅動盤以主屬性匹配為主
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>
+                                    技能升級需參考角色定位
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>
+                                    合理利用每日補給資源
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-md">
+                            <h4 class="font-semibold text-lg mb-4 text-indigo-700 flex items-center">
+                                <span class="text-2xl mr-2">⚠️</span>
+                                注意事項
+                            </h4>
+                            <ul class="space-y-3 text-gray-700">
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>
+                                    新手期合理規劃抽卡資源
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>
+                                    優先完成主線任務解鎖功能
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>
+                                    合理利用商店兌換資源
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="w-2 h-2 bg-indigo-400 rounded-full mr-3"></span>
+                                    留意活動時程把握獎勵
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 快速連結區 -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="group">
+                        <a href="#" class="block bg-gradient-to-br from-cyan-50 to-blue-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-blue-200">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="text-lg font-semibold text-cyan-700">詳細攻略</h3>
+                                <span class="text-2xl group-hover:translate-x-1 transition-transform">→</span>
+                            </div>
+                            <p class="text-slate-600">深入探討角色培養與技能搭配</p>
+                        </a>
+                    </div>
+                    <div class="group">
+                        <a href="#" class="block bg-gradient-to-br from-blue-50 to-indigo-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-indigo-200">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="text-lg font-semibold text-blue-700">素材規劃</h3>
+                                <span class="text-2xl group-hover:translate-x-1 transition-transform">→</span>
+                            </div>
+                            <p class="text-slate-600">材料獲取與培養規劃指南</p>
+                        </a>
+                    </div>
+                    <div class="group">
+                        <a href="#" class="block bg-gradient-to-br from-indigo-50 to-purple-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-purple-200">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="text-lg font-semibold text-indigo-700">最新活動</h3>
+                                <span class="text-2xl group-hover:translate-x-1 transition-transform">→</span>
+                            </div>
+                            <p class="text-slate-600">當前版本活動資訊與獎勵</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
             <!-- 角色培養 -->
             <div x-show="activeSection === 'characters'" x-cloak>
                 <h2 class="text-2xl font-bold mb-4 text-indigo-900">角色培養指南</h2>
@@ -374,12 +899,12 @@
                     <!-- 艾蓮角色卡片 -->
                     <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-cyan-500 group hover:shadow-xl transition-all card-hover-effect">
                         <div class="relative mb-4 overflow-hidden rounded-lg">
-                            <img src="images/ellen.jpg" 
+                            <img src="images/il..jpg" 
                                  alt="艾蓮角色立繪" 
                                  class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"/>
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-cyan-900/80 to-transparent p-4">
                                 <span class="px-2 py-1 bg-cyan-600 text-white text-sm rounded-full">冰系</span>
-                                <h3 class="text-xl font-bold text-white mt-2">艾蓮 - 冰刃舞者</h3>
+                                <h3 class="text-xl font-bold text-white mt-2">艾蓮 - 冰刃強攻</h3>
                             </div>
                         </div>
                         <div class="space-y-4">
@@ -423,12 +948,12 @@
                     <!-- 莱卡恩角色卡片 -->
                     <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-blue-500 group hover:shadow-xl transition-all card-hover-effect">
                         <div class="relative mb-4 overflow-hidden rounded-lg">
-                            <div class="w-full h-64 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
-                                <span class="text-white text-2xl font-bold">莱卡恩</span>
-                            </div>
+                            <img src="images/萊卡恩.jpg" 
+                                 alt="萊卡恩角色立繪" 
+                                 class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"/>
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-blue-900/80 to-transparent p-4">
                                 <span class="px-2 py-1 bg-blue-600 text-white text-sm rounded-full">冰系</span>
-                                <h3 class="text-xl font-bold text-white mt-2">莱卡恩 - 冰霜守護者</h3>
+                                <h3 class="text-xl font-bold text-white mt-2">莱卡恩 - 冰屬性擊破</h3>
                             </div>
                         </div>
                         <div class="space-y-4">
@@ -464,12 +989,12 @@
                     <!-- 丽娜角色卡片 -->
                     <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-purple-500 group hover:shadow-xl transition-all card-hover-effect">
                         <div class="relative mb-4 overflow-hidden rounded-lg">
-                            <div class="w-full h-64 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
-                                <span class="text-white text-2xl font-bold">丽娜</span>
-                            </div>
+                            <img src="images/麗娜.jpg" 
+                                 alt="麗娜角色立繪" 
+                                 class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"/>
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-purple-900/80 to-transparent p-4">
                                 <span class="px-2 py-1 bg-purple-600 text-white text-sm rounded-full">雷系</span>
-                                <h3 class="text-xl font-bold text-white mt-2">丽娜 - 雷電使者</h3>
+                                <h3 class="text-xl font-bold text-white mt-2">丽娜 - 電系支援</h3>
                             </div>
                         </div>
                         <div class="space-y-4">
@@ -501,6 +1026,113 @@
                             </svg>
                         </a>
                     </div>
+
+                    <!-- 板機角色卡片（參考萊卡恩，並填入麗娜資料） -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-yellow-500 group hover:shadow-xl transition-all card-hover-effect">
+                        <div class="relative mb-4 overflow-hidden rounded-lg">
+                            <img src="images/板機.jpg" 
+                                 alt="板機角色立繪" 
+                                 class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"/>
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-yellow-900/80 to-transparent p-4">
+                                <span class="px-2 py-1 bg-yellow-600 text-white text-sm rounded-full">電屬性 支援</span>
+                                <h3 class="text-xl font-bold text-white mt-2">板機 - 電屬性支援</h3>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-semibold text-yellow-600">角色簡介</h4>
+                                <p class="text-gray-700 text-sm">板機（麗娜）是維多利亞家政的女僕長，擅長為全隊提供穿透率與電屬性增益，能指派玩偶杜蘇拉與安娜塔莎協助戰鬥，是電隊不可或缺的強力輔助。</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-yellow-600">核心技能</h4>
+                                <div class="grid grid-cols-2 gap-2 mt-2">
+                                    <div class="bg-yellow-50 p-2 rounded">
+                                        <span class="block text-sm font-medium text-yellow-700">普通攻擊：痛打呆子</span>
+                                        <span class="text-xs text-gray-600">指派玩偶進行多段攻擊，造成物理與電屬性傷害</span>
+                                    </div>
+                                    <div class="bg-yellow-50 p-2 rounded">
+                                        <span class="block text-sm font-medium text-yellow-700">特殊技：趕走傻瓜</span>
+                                        <span class="text-xs text-gray-600">召回玩偶並造成範圍電屬性傷害，提升抗打斷</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-yellow-600">推薦搭配</h4>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="px-2 py-1 bg-yellow-100 text-yellow-700 rounded-full text-sm">可琳</span>
+                                    <span class="px-2 py-1 bg-yellow-100 text-yellow-700 rounded-full text-sm">安東</span>
+                                    <span class="px-2 py-1 bg-yellow-100 text-yellow-700 rounded-full text-sm">艾蓮</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-yellow-600">裝備推薦</h4>
+                                <div class="mt-2 p-3 bg-gradient-to-r from-yellow-50 to-blue-50 rounded-lg">
+                                    <p class="text-gray-700 text-sm">驅動盤：靜聽嘉音4件套（主C輔助最佳），或河豚電音/搖擺爵士/混沌重金屬2+2件套</p>
+                                    <p class="text-gray-700 text-sm mt-1">音擎：S級「啜泣搖籃」（高穿透率），A級「時光切片」可作為下位替代</p>
+                                    <p class="text-gray-600 text-xs mt-1">主詞條：暴擊率/攻擊力%、穿透率、能量回復；副詞條按需選擇</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://wiki.biligame.com/zzz/%E4%B8%BD%E5%A8%9C" target="_blank" class="mt-4 inline-flex items-center text-yellow-600 hover:text-yellow-800">
+                            查看完整攻略
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- 薇薇安角色卡片 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-pink-500 group hover:shadow-xl transition-all card-hover-effect">
+                        <div class="relative mb-4 overflow-hidden rounded-lg">
+                            <img src="images/微微安.jpg" 
+                                 alt="薇薇安角色立繪" 
+                                 class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"/>
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-pink-900/80 to-transparent p-4">
+                                <span class="px-2 py-1 bg-pink-600 text-white text-sm rounded-full">乙太</span>
+                                <h3 class="text-xl font-bold text-white mt-2">薇薇安 - 乙太屬性異常</h3>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-semibold text-pink-600">角色簡介</h4>
+                                <p class="text-gray-700 text-sm">薇薇安（Vivian）是反舌鳥成員，擅長異常屬性攻擊與多工支援，能對異常狀態敵人造成額外傷害，並可在後場快速積累異常值，是異常隊不可或缺的主力。</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-pink-600">核心技能</h4>
+                                <div class="grid grid-cols-2 gap-2 mt-2">
+                                    <div class="bg-pink-50 p-2 rounded">
+                                        <span class="block text-sm font-medium text-pink-700">普通攻擊：翎羽拂擊</span>
+                                        <span class="text-xs text-gray-600">多段物理+以太傷害，第四段進入「淑女禮儀」狀態</span>
+                                    </div>
+                                    <div class="bg-pink-50 p-2 rounded">
+                                        <span class="block text-sm font-medium text-pink-700">特殊技：裙裾浮游·懸落</span>
+                                        <span class="text-xs text-gray-600">消耗飛羽造成範圍以太傷害，並獲得護羽</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-pink-600">推薦搭配</h4>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="px-2 py-1 bg-pink-100 text-pink-700 rounded-full text-sm">柳</span>
+                                    <span class="px-2 py-1 bg-pink-100 text-pink-700 rounded-full text-sm">格莉絲</span>
+                                    <span class="px-2 py-1 bg-pink-100 text-pink-700 rounded-full text-sm">雅</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-pink-600">裝備推薦</h4>
+                                <div class="mt-2 p-3 bg-gradient-to-r from-pink-50 to-blue-50 rounded-lg">
+                                    <p class="text-gray-700 text-sm">驅動盤：法厄同之歌4件套（異常主力最佳），或自由藍調/混沌爵士/混沌重金屬2+2件套</p>
+                                    <p class="text-gray-700 text-sm mt-1">音擎：S級「飛鳥星夢」（異常精通），A級「觸電唇彩」「雙生泣星」「雨林饕客」可作為替代</p>
+                                    <p class="text-gray-600 text-xs mt-1">主詞條：異常精通、以太傷害加成、異常掌控；副詞條：異常精通＞攻擊力%＞穿透值</p>
+                                </div>
+                            </div>
+                        <a href="https://wiki.biligame.com/zzz/%E8%96%87%E8%96%87%E5%AE%89" target="_blank" class="mt-4 inline-flex items-center text-pink-600 hover:text-pink-800">
+                            查看完整攻略
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- 培養指南卡片 -->
@@ -519,55 +1151,26 @@
                                  alt="武器強化示意圖" 
                                  class="w-full h-32 object-cover rounded-lg mb-3"/>
                             <h4 class="font-semibold text-lg mb-2 text-blue-800">武器強化</h4>
-                            <p class="text-gray-600">選擇適合的武器類型和屬性</p>
+                            <p class="text-gray-600">收集材料強化武器，提升角色戰力</p>
                         </div>
                         <div class="bg-white p-4 rounded-lg shadow">
-                            <img src="https://placehold.co/400x300/indigo/white/png?text=技能提升" 
-                                 alt="技能提升示意圖" 
+                            <img src="https://placehold.co/400x300/green/white/png?text=角色羈絆" 
+                                 alt="角色羈絆圖示" 
                                  class="w-full h-32 object-cover rounded-lg mb-3"/>
-                            <h4 class="font-semibold text-lg mb-2 text-indigo-800">技能提升</h4>
-                            <p class="text-gray-600">優先提升主要輸出技能等級</p>
+                            <h4 class="font-semibold text-lg mb-2 text-green-800">角色羈絆</h4>
+                            <p class="text-gray-600">提升角色之間的羈絆，解鎖專屬對話與加成</p>
                         </div>
                         <div class="bg-white p-4 rounded-lg shadow">
-                            <img src="https://placehold.co/400x300/purple/white/png?text=裝備搭配" 
-                                 alt="裝備搭配示意圖" 
+                            <img src="https://placehold.co/400x300/red/white/png?text=異常狀態" 
+                                 alt="異常狀態圖示" 
                                  class="w-full h-32 object-cover rounded-lg mb-3"/>
-                            <h4 class="font-semibold text-lg mb-2 text-purple-800">裝備搭配</h4>
-                            <p class="text-gray-600">根據角色定位選擇合適套裝</p>
+                            <h4 class="font-semibold text-lg mb-2 text-red-800">異常狀態</h4>
+                            <p class="text-gray-600">了解各種異常狀態的效果與應對策略</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 副本攻略 -->
-            <div x-show="activeSection === 'dungeons'" x-cloak>
-                <h2 class="text-2xl font-bold mb-4 text-indigo-900">副本攻略大全</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-blue-500">
-                        <h3 class="text-lg font-semibold mb-2 text-blue-800">主線關卡</h3>
-                        <p class="text-slate-600">主線劇情任務與BOSS戰攻略</p>
-                        <a href="#" class="mt-2 inline-block text-blue-600 hover:text-blue-800">閱讀更多</a>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-indigo-500">
-                        <h3 class="text-lg font-semibold mb-2 text-indigo-800">挑戰副本</h3>
-                        <p class="text-slate-600">挑戰模式攻略與獎勵一覽</p>
-                        <a href="#" class="mt-2 inline-block text-blue-600 hover:text-blue-800">閱讀更多</a>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-cyan-500">
-                        <h3 class="text-lg font-semibold mb-2 text-cyan-800">特殊活動</h3>
-                        <p class="text-slate-600">限時活動與特殊副本攻略指南</p>
-                        <a href="#" class="mt-2 inline-block text-blue-600 hover:text-blue-800">閱讀更多</a>
                     </div>
                 </div>
             </div>
         </main>
-
-        <!-- 頁尾 -->
-        <footer class="bg-indigo-900 text-white mt-8 footer-glass">
-            <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                <p class="text-center text-sm">© 2025 遊戲攻略天地. All rights reserved.</p>
-            </div>
-        </footer>
     </div>
 </body>
 </html>
